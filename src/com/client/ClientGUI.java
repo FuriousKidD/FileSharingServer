@@ -152,8 +152,8 @@ public class ClientGUI extends VBox {
 				
 				image = new Image(new FileInputStream(client.getImgFile()));
 				displayImage = new ImageView(image);
-				displayImage.setFitHeight(50);
-				displayImage.setFitWidth(50);
+				displayImage.setFitHeight(150);
+				displayImage.setFitWidth(150);
 				displayImage.setVisible(false);//hide the image
 				getChildren().add(displayImage);
 				
