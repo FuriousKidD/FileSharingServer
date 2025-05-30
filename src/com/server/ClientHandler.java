@@ -43,7 +43,7 @@ public class ClientHandler implements Runnable {
 	private File txtFileList = null;//will contain the path and file of the text file consiting of list
 	private Scanner txtFileRead = null;//scanner object which will be used for reading input from a text file data
 	private File imgFile = null;//will haave the image file and its directory
-	
+	private FileWriter txtFileAppend;
 	public static int id = 0;
 	
 	/*
@@ -201,9 +201,8 @@ public class ClientHandler implements Runnable {
 				
 				String lineToAdd = id + fileName;
 				fileList.add(lineToAdd);
-				FileWriter txtFileAppend = new FileWriter(txtFileList, true);
+				txtFileAppend = new FileWriter(txtFileList, true);
 				txtFileAppend.write(lineToAdd);
-				
 				
 			}
 		}//end of if
