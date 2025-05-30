@@ -4,7 +4,6 @@
 package com.server;
 
 import java.net.ServerSocket;
-import java.net.Socket;
 
 /**
  * This is the class of the server which will be bined to some port, and waits for clients to connect to it
